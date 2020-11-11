@@ -1,4 +1,4 @@
-# Jarkom_Modul1_Lapres_D14
+# Jarkom_Modul2_Lapres_D14
 
 ### KELOMPOK        : D14
 ANGGOTA         :
