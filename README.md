@@ -255,23 +255,47 @@ ANGGOTA         :
 
 
 ### Soal No. 10
-#### 10. Web http://penanjakan.semeruc04.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semeruc04.pw dan memiliki struktur folder sebagai berikut
-
-"""
-
-/var/www/penanjakan.semeruyyy.pw
-/public/javascripts
-/public/css
-/public/images
-/errors
-
-"""
+#### 10. Web http://penanjakan.semeruc04.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semerud14.pw dan memiliki struktur folder sebagai berikut
 
 
 
+*  /var/www/penanjakan.semeruyyy.pw
+ * /public/javascripts
+ * /public/css
+ * /public/images
+ * /errors
 
-<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/1A.JPG" >
-<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/1A.JPG" >
+- Ekstrak file asset ke folder penanjakan.semerud14.pw
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/10A.JPG" >
+
+- Lalu tambahkan ServerName dan DocumentRoot dengan penanjakan.semerud14.pw
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/10B.JPG" >
+
+- Aktifkan a2ensite penanjakan.semerud14.pw
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/10C.JPG" >
+
+- Testing : Akses dengan browser penanjakan.semerud14.pw/
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/10D.JPG" >
+
+
+### Soal No. 11
+#### 11. Pada folder /public dibolehkan directory listing namun untuk folder yang berada di dalamnya tidak dibolehkan.
+
+- Pindah ke directory /etc/apache2/sites-available
+- Nano penanjakan.semerud14.pw
+- Atur indexes, + untuk dibolehkan dan - untuk tidak dibolehkan
+
+- Pengaturan konfigurasi seperti gambar di bawah ini :
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/11A.JPG" >
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/11B.JPG" >
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/11C.JPG" >
+
+
 
 
 
