@@ -149,9 +149,9 @@ ANGGOTA         :
 ### Soal No. 6
 #### 6. Subdomain dengan alamat http://gunung.semerud14.pw yang didelegasikan pada server MOJOKERTO dan mengarah ke IP Server PROBOLINGGO 
 
-- Pada MALANG, edit file /etc/bind/jarkom/semeruc04.pw dan ubah menjadi seperti di bawah ini:
+- Pada MALANG, edit file /etc/bind/jarkom/semerud14.pw dan ubah menjadi seperti di bawah ini:
 
-      nano /etc/bind/jarkom/semeruc04.pw
+      nano /etc/bind/jarkom/semerud14.pw
 
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/6A.JPG" >
 
@@ -255,7 +255,7 @@ ANGGOTA         :
 
 
 ### Soal No. 10
-#### 10. Web http://penanjakan.semeruc04.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semerud14.pw dan memiliki struktur folder sebagai berikut
+#### 10. Web http://penanjakan.semerud14.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semerud14.pw dan memiliki struktur folder sebagai berikut
 
 
 
