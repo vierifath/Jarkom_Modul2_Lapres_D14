@@ -429,8 +429,28 @@ Lalu pada ports.conf Listen untuk port 8888
 
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/16D.JPG" >
 
+
 ### Soal No. 17
 #### 17. request gambar yang memiliki substring “semeru” akan diarahkan menuju semeru.jpg.
+
+- Mengubah file .htaccess sesuai berikut :
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/17A.JPG" >
+
+- Tambahkan AllowOverride All untuk directory penanjakan.semerud14.pw
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/17B.JPG" >
+
+- Restart apache
+
+      service apache2 restart
+      
+- Testing : Akses dengan browser --> http://penanjakan.semerud14.pw/public/images/(...)semeru(...).jpg
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/17C.JPG" >
+
+
+
 
 
 
