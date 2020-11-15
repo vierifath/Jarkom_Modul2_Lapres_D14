@@ -198,12 +198,80 @@ ANGGOTA         :
 ### Soal No. 7
 #### 7. Subdomain dengan nama http://naik.gunung.semerud14.pw, domain ini diarahkan ke IP Server PROBOLINGGO.
 
+- Konfigurasi pada MOJOKERTO 
+
+- Edit file /etc/bind/delegasi/gunung.semerud14.pw menjadi seperti dibawah ini
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/7A.JPG" >
+
+- Restart bind9
+
+      service bind9 restart
+      
+- Testing : Lakukan ping ke domain naik.gunung.semerud14.pw dari client GRESIK
+
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/7B.JPG" >
+
+### Soal No. 8
+#### 8. Mengatur webserver untuk domain semerud14.pw
+
+- Pindah ke directory /etc/apache2/sites-available
+- Copy file default menjadi file semerud14.pw.conf
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/8A.JPG" >
+
+- Restart apache
+
+      service apache2 restart
+
+
+- Akses dengan browser semerud14.pw
+
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/8B.JPG" >
+
+
+### Soal No. 9
+#### 9. Mengaktifkan mod rewrite agar urlnya menjadi http://semerud14.pw/home.
+
+- Jalankan perintah 
+
+      a2enmod rewrite
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/9A.JPG" >
+
+- Lalu untuk semerud14.pw, AllowOverride diganti All
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/9B.JPG" >
+
+- Lalu edit file .htaccess dan isikan seperti berikut
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/9C.JPG" >
+
+- Testing : Akses dengan browser semerud14.pw/home
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/9D.JPG" >
+
+
+### Soal No. 10
+#### 10. Web http://penanjakan.semeruc04.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semeruc04.pw dan memiliki struktur folder sebagai berikut
+
+"""
+
+/var/www/penanjakan.semeruyyy.pw
+/public/javascripts
+/public/css
+/public/images
+/errors
+
+"""
+
+
 
 
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/1A.JPG" >
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/1A.JPG" >
-<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/1A.JPG" >
-
 
 
 
