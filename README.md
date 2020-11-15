@@ -143,7 +143,7 @@ ANGGOTA         :
 - Lakukan ping ke semerud14.pw pada client GRESIK. Jika ping berhasil maka konfigurasi DNS slave telah berhasil
 
 
-<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/5D.JPG" >
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/5D.jpg" >
 
 
 ### Soal No. 6
