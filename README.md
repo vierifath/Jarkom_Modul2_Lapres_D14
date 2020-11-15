@@ -292,8 +292,164 @@ ANGGOTA         :
 - Pengaturan konfigurasi seperti gambar di bawah ini :
 
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/11A.JPG" >
+
+
+- Testing 1 : Akses dengan browser penanjakan.semerud14.pw/public
+
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/11B.JPG" >
+
+
+- Testing 2 : Akses dengan browser penanjakan.semerud14.pw/public/css/
+
+
 <img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/11C.JPG" >
+
+
+### Soal No. 12
+#### 12. Untuk mengatasi HTTP Error code 404, disediakan file 404.html pada folder /errors untuk mengganti error default 404 dari Apache.
+
+- Pindah ke directory /etc/apache2/sites-available
+- Nano penanjakan.semerud14.pw.conf
+- Tambahkan : ErrorDocument 404 /errors/404.html
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/12A.JPG" >
+
+- Restart apache
+
+      service apache2 restart
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/12B.JPG" >
+
+
+- Testing : Akses dengan browser penanjakan.semerud14.pw/(link yang tidak ada)
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/12C.JPG" >
+
+
+### Soal No. 13
+#### 13. Membuat konfigurasi virtual host agar dapat mengakses http://penanjakan.semerud14.pw/public/javascripts dengan http://penanjakan.semerud14.pw/js
+
+
+- Pindah ke directory /etc/apache2/sites-available
+- Nano penanjakan.semerud14.pw.conf
+- Tambahkan : Alias “/js” “/var/www/penanjakan.semerud14.pw/public/javascripts”
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/13A.JPG" >
+
+- Restart apache
+
+      service apache2 restart
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/13B.JPG" >
+
+- Testing : Akses dengan browser penanjakan.semerud14.pw/js
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/13C.JPG" >
+
+### Soal No. 14
+#### 14. Membuat naik.gunung.semerud14.pw di port 8888
+
+- Pindah ke directory /etc/apache2/sites-available
+- Nano naik.gunung.semerud14.pw
+- Konfigurasi seperti gambar di bawah ini :
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/14A.JPG" >
+
+Lalu pada ports.conf Listen untuk port 8888
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/14B.JPG" >
+
+
+- Restart apache
+
+      service apache2 restart
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/14C.JPG" >
+
+
+- Testing : Akses dengan browser  naik.gunung.semerud14.pw:8888
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/14D.JPG" >
+
+
+### Soal No. 15
+#### 15. Memberikan Auth pada naik.gunung.semerud14.pw
+
+- Untuk menambahkan user dan password menggunakan command berikut:
+
+      htpasswd -c .htpasswd semeru
+      
+- Periksa username dan password apakah udah tersedia atau belum
+
+      cat /etc/apache2/.htpasswd
+      
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/15A.JPG" >
+
+- Lalu tambahkan Auth untuk directory naik.gunung.semerud14.pw
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/15B.JPG" >
+
+
+- Restart apache
+
+      service apache2 restart
+      
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/15C.JPG" >
+
+
+- Testing : Akses dengan browser  naik.gunung.semerud14.pw:8888
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/15D.JPG" >
+
+
+- Setelah memasukkan username dan password
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/15E.JPG" >
+
+
+### Soal No. 16
+#### 16. Mengunjungi IP PROBOLINGGO akan dialihkan secara otomatis ke http://semerud14.pw.
+
+- Rubah .htaccess default pada PROBOLINGGO untuk meredirect ip PROBOLINGGO ke semerud14.pw
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/16A.JPG" >
+
+- Ganti allowoverride none jadi all untuk directory /var/www/
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/16B.JPG" >
+
+
+- Restart apache
+
+      service apache2 restart
+      
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/16C.JPG" >
+
+- Testing : Akses dengan browser 10.151.79.124
+
+<img src="https://github.com/vierifath/Jarkom_Modul2_Lapres_D14/blob/main/images/16D.JPG" >
+
+### Soal No. 17
+#### 17. request gambar yang memiliki substring “semeru” akan diarahkan menuju semeru.jpg.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
